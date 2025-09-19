@@ -1,5 +1,29 @@
 # GroceryApp sprint2 
 
+## Branch Strategie
+
+Voor dit project hanteren we een duidelijke branch-structuur om overzicht en stabiliteit te bewaren:
+
+### main
+De stabiele productiebranch. Alleen volledig geteste en goedgekeurde code komt hier terecht.
+
+### develop
+De integratiebranch waar nieuwe features samenkomen. Hier wordt getest of alle onderdelen goed samenwerken voordat er een release naar main gaat.
+
+### feature/*
+Voor nieuwe functionaliteiten wordt gewerkt met feature-branches.
+Bijvoorbeeld:
+
+feature/uc05 → Implementatie van use case 05
+feature/uc06 → Implementatie van use case 06
+
+### Werkwijze
+
+Nieuwe functionaliteit start altijd in een feature/* branch.
+Wanneer de feature af is, wordt deze gemerged naar develop.
+Na voldoende testen en validatie wordt develop gemerged naar main.
+Deze aanpak zorgt ervoor dat de main branch altijd stabiel blijft, terwijl er flexibel doorontwikkeld kan worden in feature-branches.
+
 ## Docentversie  
 In deze versie zijn de wijzigingen doorgevoerd en is de code compleet.  
 
