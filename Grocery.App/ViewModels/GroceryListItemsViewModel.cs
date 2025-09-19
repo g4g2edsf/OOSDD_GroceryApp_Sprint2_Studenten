@@ -78,6 +78,7 @@ namespace Grocery.App.ViewModels
                 GetAvailableProducts();
                 //call OnGroceryListChanged(GroceryList);
                 OnGroceryListChanged(GroceryList);
+                Load(GroceryList.Id);
             }
         }
     }
